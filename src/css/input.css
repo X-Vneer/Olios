@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply fill-main;
+}
+
+.active-dot {
+  @apply bg-main;
+}
+
+.side-menu.open {
+  z-index: 2;
+}
+.side-menu .side-menu-items {
+  clip-path: circle(20px at 185px 40px);
+  transition: clip-path 0.5s ease-in-out 0.4s;
+  overflow: hidden;
+}
+.side-menu .side-menu-items.open {
+  clip-path: circle(500px);
+  overflow: hidden;
+}
+.layout.open {
+  @apply opacity-60;
+}
+
+.landing {
+  background-image: url("../assets/images/landing.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+@media (max-width: 650px) {
+  .landing-text {
+    writing-mode: vertical-lr;
+  }
+}
+
+/* Hamburger Menu */
+.hamburger {
+  width: 18px;
+  height: 15px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  @apply bg-gray-400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 2px;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(5px);
+}
+
+.hamburger-bottom {
+  transform: translateY(10px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+  box-shadow: none;
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}

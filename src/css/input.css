@@ -2,40 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.active {
-  @apply fill-main;
+/* global  */
+.title {
+  @apply font-thin uppercase;
 }
-
-.active-dot {
-  @apply bg-main;
+.section {
+  @apply py-10;
 }
-
-.side-menu.open {
-  z-index: 2;
-}
-.side-menu .side-menu-items {
-  clip-path: circle(20px at 185px 40px);
-  transition: clip-path 0.5s ease-in-out 0.4s;
-  overflow: hidden;
-}
-.side-menu .side-menu-items.open {
-  clip-path: circle(500px);
-  overflow: hidden;
-}
-.layout.open {
-  @apply opacity-60;
-}
-
-.landing {
-  background-image: url("../assets/images/landing.png");
-  background-size: cover;
-  background-position: bottom;
-}
-
-@media (max-width: 650px) {
-  .landing-text {
-    writing-mode: vertical-lr;
-  }
+.item {
+  @apply text-gray-400 hover:text-main transition-colors duration-200 flex cursor-pointer items-center justify-end w-full  gap-3;
 }
 
 /* Hamburger Menu */
@@ -67,6 +42,10 @@
   transform: translateY(10px);
 }
 
+.open .hamburger-top,
+.open .hamburger-bottom {
+  @apply bg-main;
+}
 .open {
   transform: rotate(90deg);
   transform: translateY(0px);
@@ -83,4 +62,81 @@
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.active {
+  @apply fill-main;
+}
+
+.active-dot {
+  @apply bg-main;
+}
+
+.side-menu.open {
+  z-index: 2;
+}
+.side-menu .side-menu-items {
+  clip-path: circle(20px at 175px 40px);
+  transition: clip-path 0.5s ease-in-out 0.4s;
+  overflow: hidden;
+}
+.side-menu .side-menu-items.open {
+  clip-path: circle(500px);
+  overflow: hidden;
+}
+.layout.open {
+  @apply opacity-60;
+}
+
+.home {
+  background-image: url("../assets/images/landing.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+@media (max-width: 650px) {
+  .home-text {
+    writing-mode: vertical-lr;
+  }
+}
+
+/* products section  */
+
+.card {
+  width: 230px;
+
+  @apply bg-white shadow-sm uppercase p-6 flex flex-col
+    justify-between;
+}
+.card img {
+  @apply max-w-[200px] mx-auto mb-4;
+}
+.card h3 {
+  @apply text-lg leading-5;
+}
+.card p {
+  @apply block text-[12px] text-gray-400 font-semibold mb-5;
+}
+.card span {
+  @apply text-main font-semibold text-xl;
+}
+
+@media (min-width: 768px) {
+  .card.wide {
+    @apply w-[230px] flex flex-col lg:flex-row md:w-full items-center justify-around;
+  }
+  .card.wide img {
+    @apply w-full md:max-w-[310px];
+  }
+  .card.wide h3 {
+    @apply text-[2rem] leading-9;
+  }
+}
+
+.card.medium {
+  @apply md:grow flex-row flex-wrap items-center;
+}
+.card.medium img {
+  width: 200px;
+  @apply grow mx-0 max-w-none;
 }

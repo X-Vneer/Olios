@@ -9,9 +9,7 @@ html {
 .title {
   @apply font-thin uppercase;
 }
-.section {
-  @apply py-10;
-}
+
 .item {
   @apply text-gray-400 hover:text-main transition-colors duration-200 flex cursor-pointer items-center justify-end w-full  gap-3;
 }

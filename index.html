@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Olios</title>
   </head>
+
   <body>
     <!-- side bar  -->
     <div
       class="side-bar fixed bg-white shadow-lg left-0 top-0 bottom-0 w-12 sm:w-16 h-screen py-5 flex flex-col justify-between z-50"
     >
       <div>
-        <a title="home" href="/">
+        <a title="home" href="#home">
           <img
             src="/assets/images/logo.png"
             class="w-[35px] mx-auto"
@@ -24,8 +25,7 @@
       </div>
       <ul class="flex flex-col gap-4 basis-2/3">
         <li>
-          <a title="main page" href="/">
-
+          <a title="main page" href="#home">
             <svg
               class="w-[24px] mx-auto hover:-translate-y-1 hover:fill-main fill-gray-400 cursor-pointer transition-all duration-300"
               data-section="main"
@@ -40,7 +40,6 @@
         </li>
         <li>
           <a title="products page" title href="#products">
-
             <svg
               class="w-[24px] mx-auto hover:-translate-y-1 hover:fill-main fill-gray-400 cursor-pointer transition-all duration-300"
               data-section="cart"
@@ -55,7 +54,6 @@
         </li>
         <li>
           <a title="search" href="#search">
-
             <svg
               class="w-[24px] mx-auto hover:-translate-y-1 hover:fill-main fill-gray-400 cursor-pointer transition-all duration-300"
               data-section="search"
@@ -85,51 +83,58 @@
       </div>
     </div>
     <!-- side menu icon -->
-  
-      <button aria-label="open and close" id="menu-btn" 
-      class="rounded-full w-11 h-11 shadow-md  fixed right-[40px] sm:right-7 top-4 flex items-center justify-center cursor-pointer bg-white z-50"
 
-      type="button">
-        <div class="block hamburger h-fit focus:outline-none">
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
-        </div>
-      </button>
-    </div>
+    <button
+      aria-label="open and close"
+      id="menu-btn"
+      class="rounded-full w-11 h-11 shadow-md fixed right-[40px] sm:right-7 top-4 flex items-center justify-center cursor-pointer bg-white z-50"
+      type="button"
+    >
+      <div class="block hamburger h-fit focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </div>
+    </button>
+
     <!-- side menu -->
-    <section id="side-menu" class="side-menu -z-10 fixed w-screen h-screen top-0 left-0">
-      <div id="layout"
-        class="bg-gray-200 backdrop-blur-sm opacity-0   absolute w-screen h-screen top-0 left-0 layout transition-opacity duration-300 "
+    <section
+      id="side-menu"
+      class="side-menu -z-10 fixed w-screen h-screen top-0 left-0"
+    >
+      <div
+        id="layout"
+        class="bg-gray-200 backdrop-blur-sm opacity-0 absolute w-screen h-screen top-0 left-0 layout transition-opacity duration-300"
       ></div>
       <!-- side menu items -->
-      <div id="side-menu-items"
-        class="side-menu-items absolute w-60 pr-12 h-screen right-0 top-0 shadow-md bg-white opacity-100"
+      <div
+        id="side-menu-items"
+        class="side-menu-items absolute w-[240px] pr-12 h-screen right-0 top-0 shadow-md bg-white opacity-100"
       >
-      <ul
-      class="h-[70vh] flex flex-col justify-center gap-7 items-start uppercase"
-    >
-      <li class="item">
-        <span >Living room</span>
-        <img src="/assets/icons/living-room.png" alt="" class="w-8" />
-      </li>
-      <li class="item">
-        <span >office</span>
-        <img src="/assets/icons/office.png" alt="" class="w-8" />
-      </li>
-      <li class="item">
-        <span >for kids</span>
-        <img src="/assets/icons/for-kids.png" alt="" class="w-8" />
-      </li>
-      <li class="item">
-        <span >for kids</span>
-        <img src="/assets/icons/kitchen.png" alt="" class="w-8" />
-      </li>
-      <li class=" item">
-        <span >accesories</span>
-        <img src="/assets/icons/accesories.png" alt="" class="w-8" />
-      </li>
-    </ul>
+        <ul
+          class="h-[70vh] flex flex-col justify-center gap-7 items-start uppercase"
+        >
+          <li class="item">
+            <span>Living room</span>
+            <img src="/assets/icons/living-room.png" alt="" class="w-8" />
+          </li>
+          <li class="item">
+            <span>office</span>
+            <img src="/assets/icons/office.png" alt="" class="w-8" />
+          </li>
+          <li class="item">
+            <span>for kids</span>
+            <img src="/assets/icons/for-kids.png" alt="" class="w-8" />
+          </li>
+          <li class="item">
+            <span>for kids</span>
+            <img src="/assets/icons/kitchen.png" alt="" class="w-8" />
+          </li>
+          <li class="item">
+            <span>accesories</span>
+            <img src="/assets/icons/accesories.png" alt="" class="w-8" />
+          </li>
+        </ul>
       </div>
     </section>
     <!-- end side menu  -->
@@ -180,81 +185,179 @@
       </div>
     </section>
     <!-- end home section  -->
-    
 
     <!-- products section  -->
-    <section id="products" class=" section pl-14  sm:pr-10 md:px-24 lg:px-32 xl:px-50 bg-section  min-h-screen ">
+    <section
+      id="products"
+      class="section py-10 pl-14 sm:pr-10 md:px-24 lg:px-32 xl:px-50 bg-section min-h-screen"
+    >
       <!-- section head  -->
-      <div class="flex justify-between flex-col-reverse sm:flex-row items-center">
-        <h2 class="title  text-[2.5rem]">products</h2>
+      <div
+        class="flex justify-between flex-col-reverse sm:flex-row items-center"
+      >
+        <h2 class="title text-[2.5rem]">products</h2>
         <div>
-          <p class=" item uppercase">
-            <span >Living room</span>
+          <p class="item uppercase">
+            <span>Living room</span>
             <img src="/assets/icons/living-room.png" alt="" class="w-8" />
-          </p> 
+          </p>
         </div>
       </div>
 
       <!-- section body  -->
-      <div class="colection flex flex-col gap-6  py-10 " >
+      <div class="colection flex flex-col gap-6 py-10">
         <!--  -->
-        <div class="flex flex-col justify-center sm:flex-row gap-6 items-center sm:items-stretch">
+        <div
+          class="flex flex-col justify-center sm:flex-row gap-6 items-center sm:items-stretch"
+        >
           <div class="card small">
-            <img loading="lazy" src="/assets/images/product-1.png" alt="Red seat">
+            <img
+              loading="lazy"
+              src="/assets/images/product-1.png"
+              alt="Red seat"
+            />
             <div>
-              <h3 >red seat</h3>
+              <h3>red seat</h3>
               <p>the best seat for your living room.</p>
-              <span >45$</span>
+              <span>$45</span>
             </div>
           </div>
-         
+
           <div class="card wide">
-            <img loading="lazy" src="/assets/images/product-3.png" alt="white table">
+            <img
+              loading="lazy"
+              src="/assets/images/product-3.png"
+              alt="white table"
+            />
             <div>
-              <h3 >white table</h3>
+              <h3>white table</h3>
               <p>the best table for your living room.</p>
-              <span >320$</span>
+              <span>$320</span>
             </div>
           </div>
-         
-      </div>
-      <!--  -->
-        <div class="flex flex-col justify-center sm:flex-row gap-6 items-center sm:items-stretch flex-wrap">
+        </div>
+        <!--  -->
+        <div
+          class="flex flex-col justify-center sm:flex-row gap-6 items-center sm:items-stretch flex-wrap"
+        >
           <div class="card small">
-            <img loading="lazy" src="/assets/images/product-2.png" alt="blue seat">
+            <img
+              loading="lazy"
+              src="/assets/images/product-2.png"
+              alt="blue seat"
+            />
             <div>
               <h3>blue seat</h3>
               <p>the best seat for your living room.</p>
-              <span >35$</span>
+              <span>$35</span>
             </div>
           </div>
-         <!--  -->
-          
+          <!--  -->
+
           <div class="card">
-            <img loading="lazy" src="/assets/images/product-5.png" alt="dark seat">
+            <img
+              loading="lazy"
+              src="/assets/images/product-5.png"
+              alt="dark seat"
+            />
             <div>
-              <h3 >dark seat</h3>
+              <h3>dark seat</h3>
               <p>the best seat for your living room.</p>
-              <span >90$</span>
+              <span>$90</span>
             </div>
           </div>
           <!--  -->
 
           <div class="card medium">
-            <img src="/assets/images/product-4.png" alt="modern bed " loading="lazy">
+            <img
+              src="/assets/images/product-4.png"
+              alt="modern bed "
+              loading="lazy"
+            />
             <div>
-              <h3 >Modern bed</h3>
+              <h3>Modern bed</h3>
               <p>the best bed for your living room.</p>
-              <span >520$</span>
+              <span>$520</span>
             </div>
           </div>
-         
-      </div>
-      <!--  -->
+        </div>
+        <!--  -->
       </div>
 
       <h4 class="view-more">view more products</h4>
+    </section>
+    <!-- end porducts section -->
 
+    <!-- single product section  -->
+    <section id="product" class="section pl-14 sm:pl-16 bg-section">
+      <div class="min-h-screen flex flex-col sm:flex-row items-center gap-4">
+        <div class="bg-white w-[45vw] pt-10 pb-20 px-6 shadow-md">
+          <div class="mb-6">
+            <div class="flex items-center justify-end gap-1">
+              <span>435</span
+              ><img src="/assets/icons/heart.svg" class="w-4" alt="heat" />
+            </div>
+          </div>
+          <img
+            src="/assets/images/product-6.png"
+            class="w-[80%] mx-auto"
+            alt="white seat"
+          />
+        </div>
+        <!--  -->
+        <div class="grow">
+          <div class="ml-12 md:ml-16 max-w-[400px] pr-2">
+            <div
+              class="flex justify-between flex-col-reverse sm:flex-row items-center"
+            >
+              <h2 class="title text-[2.5rem]">products</h2>
+              <div>
+                <p class="item uppercase">
+                  <span>Living room</span>
+                  <img src="/assets/icons/living-room.png" alt="" class="w-8" />
+                </p>
+              </div>
+            </div>
+            <div>
+              <h1 class="uppercase text-4xl font-thin mt-32 mb-4">
+                <span class="text-main">white seat -</span> office
+              </h1>
+              <p class="text-gray-400 text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                aliquid suscipit itaque error adipisci. Vero magnam eos neque
+                laboriosam facilis.
+              </p>
+            </div>
+            <div class="pt-12 flex justify-between items-center">
+              <div>
+                <p class="uppercase pb-1 text-sm text-gray-400">cost</p>
+                <span class="text-main text-xl font-semibold">$65</span>
+              </div>
+              <!--  -->
+              <div class="flex items-end gap-1">
+                <div>
+                  <p class="uppercase pb-1 text-sm text-gray-400">quantity</p>
+                  <input
+                    class="w-16 font-bold px-2 py-1 rounded-full focus:outline-none focus:ring-1 focus:ring-main"
+                    value="1"
+                    type="number"
+                    title="quantity"
+                    name="quantity"
+                    id="quantity"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="ml-2 bg-main text-white uppercase px-4 py-1 rounded-2xl text-sm font-semibold"
+                >
+                  add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
     </section>
 
     <script defer="true" src="js/index.js"></script>

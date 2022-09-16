@@ -43,10 +43,14 @@ function handleIntersection(entries) {
   });
 }
 
+let j = 0;
 const cards = document.querySelectorAll(".card");
 cards.forEach((ele, ind) => {
+  j++;
+  if (j === 3) j = 0;
   ele.style.cssText = `opacity:0; transform:translateY(70px); transition-delay:${
-    ind / 10
+    j / 10
   }s;`;
+
   observer.observe(ele);
 });

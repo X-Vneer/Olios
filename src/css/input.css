@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 /* global  */
+html {
+  scroll-behavior: smooth;
+}
 .title {
   @apply font-thin uppercase;
 }
@@ -106,7 +109,7 @@
   width: 230px;
 
   @apply bg-white shadow-sm uppercase p-6 flex flex-col
-    justify-between;
+    justify-between hover:-translate-y-2 duration-500;
 }
 .card img {
   @apply max-w-[200px] mx-auto mb-4;
@@ -139,4 +142,8 @@
 .card.medium img {
   width: 200px;
   @apply grow mx-0 max-w-none;
+}
+
+.view-more {
+  @apply text-lg text-main text-center uppercase cursor-pointer hover:text-gray-400 transition-colors duration-300 w-fit mx-auto;
 }

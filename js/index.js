@@ -31,3 +31,22 @@ btn.addEventListener("click", () => {
 
   // nav.classList.toggle("h-[240px]");
 });
+
+// showing cards
+let observer = new IntersectionObserver(handleIntersection, { threshold: 0.4 });
+function handleIntersection(entries) {
+  entries.map((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = "";
+      entry.target.style.transform = "";
+    }
+  });
+}
+
+const cards = document.querySelectorAll(".card");
+cards.forEach((ele, ind) => {
+  ele.style.cssText = `opacity:0; transform:translateY(70px); transition-delay:${
+    ind / 10
+  }s;`;
+  observer.observe(ele);
+});

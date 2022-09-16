@@ -916,6 +916,10 @@ video {
 
 /* global  */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .title {
   font-weight: 100;
   text-transform: uppercase;
@@ -1060,6 +1064,12 @@ video {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-duration: 500ms;
+}
+
+.card:hover {
+  --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .card img {
@@ -1146,6 +1156,31 @@ video {
   margin-right: 0px;
   max-width: none;
   flex-grow: 1;
+}
+
+.view-more {
+  margin-left: auto;
+  margin-right: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(0 35 255 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.view-more:hover {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .hover\:-translate-y-1:hover {

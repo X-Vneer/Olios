@@ -69,3 +69,31 @@ like.forEach((ele) =>
         : --likesNumber.textContent);
   })
 );
+
+// highlighting icons
+const handleSectionsView = (sections) => {
+  let ind;
+  sections.forEach((section) => {
+    if (section.isIntersecting) {
+      sideBarIcons.forEach((ele) => ele.classList.remove("active"));
+      ind =
+        section.target.id === "home"
+          ? 0
+          : section.target.id === "products"
+          ? 1
+          : 2;
+
+      sideBarIcons[ind].classList.add("active");
+    }
+  });
+};
+let sectionObsorver = new IntersectionObserver(handleSectionsView, {
+  threshold: 0.2,
+});
+const home = document.getElementById("home");
+const products = document.getElementById("products");
+const search = document.getElementById("search");
+
+sectionObsorver.observe(home);
+sectionObsorver.observe(products);
+sectionObsorver.observe(search);

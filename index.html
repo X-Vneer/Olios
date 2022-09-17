@@ -28,7 +28,7 @@
           <li>
             <a title="main page" href="#home">
               <svg
-                class="w-[24px] mx-auto hover:-translate-y-1 hover:fill-main fill-gray-400 cursor-pointer transition-all duration-300"
+                class="w-[24px] mx-auto hover:-translate-y-1 active hover:fill-main fill-gray-400 cursor-pointer transition-all duration-300"
                 data-section="main"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512"
@@ -435,6 +435,45 @@
         </div>
       </section>
       <!-- end single product section  -->
+
+      <!-- search  -->
+      <section
+        id="search-section"
+        class="py-20 pl-14 sm:pr-10 md:px-24 lg:px-32 xl:px-50 min-h-screen relative"
+      >
+        <div
+          class="bg-gray-200 backdrop-blur-sm opacity-70 absolute top-0 left-0 bottom-0 right-0"
+        ></div>
+        <div class="relative px-4 sm:px-16 lg:px-32">
+          <div class="search-input">
+            <input
+              title="search"
+              type="search"
+              id="search"
+              name="search"
+              class="w-full border-b-2 border-b-gray-400 focus:outline-none px-4 py-2 text-[1.8rem] md:text-[2.4rem] bg-transparent font-thin uppercase"
+            />
+            <label for="search" class="text-gray-400 text-sm"
+              >Type product that you are looking for</label
+            >
+          </div>
+          <div id="results" class="grid mt-20">
+            <div class="search-card">
+              <img src="/assets/images/product-1.png" alt="seat" />
+              <h3>read seat</h3>
+            </div>
+            <div class="search-card">
+              <img src="/assets/images/product-5.png" alt="seat" />
+              <h3>black seat</h3>
+            </div>
+            <div class="search-card">
+              <img src="/assets/images/product-6.png" alt="seat" />
+              <h3>white seat</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end search  -->
     </main>
 
     <script defer="true" src="js/index.js"></script>

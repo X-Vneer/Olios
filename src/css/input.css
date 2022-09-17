@@ -158,7 +158,7 @@ html {
   @apply text-lg text-main text-center uppercase cursor-pointer hover:text-gray-400 transition-colors duration-300 w-fit mx-auto;
 }
 
-/* product section */
+/* single product section */
 .secondary-card {
   @apply bg-white p-4 w-[250px] flex flex-col justify-between;
 }
@@ -167,4 +167,26 @@ html {
 }
 .secondary-card p {
   @apply text-gray-400 uppercase text-sm;
+}
+
+/* search section */
+#search-section {
+  background-image: url("/assets/images/landing.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+#results {
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 12px;
+}
+
+.search-card {
+  @apply bg-white flex gap-2 items-center justify-between p-4 shadow-sm;
+}
+.search-card img {
+  @apply w-[55%];
+}
+.search-card h3 {
+  @apply uppercase text-xl font-thin;
 }

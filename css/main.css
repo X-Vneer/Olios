@@ -575,8 +575,8 @@ video {
   bottom: 0px;
 }
 
-.right-\[40px\] {
-  right: 40px;
+.right-\[42px\] {
+  right: 42px;
 }
 
 .top-4 {
@@ -601,6 +601,10 @@ video {
 
 .-z-10 {
   z-index: -10;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-auto {
@@ -1184,7 +1188,7 @@ html {
 }
 
 .side-menu.open {
-  z-index: 2;
+  z-index: 40;
 }
 
 .side-menu .side-menu-items {
@@ -1454,10 +1458,6 @@ html {
 }
 
 @media (min-width: 640px) {
-  .sm\:right-7 {
-    right: 1.75rem;
-  }
-
   .sm\:w-16 {
     width: 4rem;
   }

@@ -86,7 +86,7 @@ html {
 }
 
 .side-menu.open {
-  z-index: 2;
+  z-index: 40;
 }
 .side-menu .side-menu-items {
   clip-path: circle(20px at 175px 40px);

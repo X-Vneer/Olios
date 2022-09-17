@@ -151,52 +151,153 @@
         </div>
       </section>
       <!-- end side menu  -->
-      <!-- home section section  -->
-      <section id="home" class="home h-screen relative">
-        <h1
-          class="home-text uppercase text-[9rem] md:text-[11.5rem] lg:text-[15rem] text-center text-gray-200 font-bold absolute w-full"
-        >
-          newest
-        </h1>
-        <div class="relative uppercase text-center pt-24 md:pt-8 ml-11">
-          <h1
-            class="text-[4rem] sm:text-[7rem] md:text-[10rem] text-gray-900 font-thin text-center leading-none"
-          >
-            Olios
-          </h1>
-          <div>
-            <h3
-              class="text-[1.2rem] sm:text-[1.6rem] md:text-[2rem] text-gray-500"
-            >
-              newest furniture shop template
-            </h3>
-            <button
-              type="button"
-              class="mt-10 bg-main text-white uppercase px-4 py-1 rounded-2xl text-sm font-bold"
-            >
-              view more
-            </button>
+
+      <!-- single product section  -->
+      <section id="product" class="section pl-14 sm:pl-16 bg-section hidden">
+        <div class="min-h-screen flex flex-col lg:flex-row">
+          <!-- product  -->
+          <div class="bg-white lg:w-[45%] pt-10 pb-20 px-6 shadow-md">
+            <div class="mb-6">
+              <div class="flex items-center justify-end gap-1">
+                <span class="likes-number">435</span
+                ><img
+                  src="/assets/icons/heart.svg"
+                  class="w-4 like cursor-pointer hover:scale-110 active:scale-100"
+                  alt="heat"
+                />
+                <img
+                  src="/assets/icons/heart-filled.svg"
+                  class="w-4 like hidden cursor-pointer hover:scale-110 active:scale-100"
+                  alt="heart-filled"
+                />
+              </div>
+            </div>
+            <img
+              src="/assets/images/product-6.png"
+              class="w-[80%] mx-auto"
+              alt="white seat"
+            />
           </div>
-        </div>
-        <div class="flex gap-2 absolute bottom-8 right-7">
-          <span
-            class="aspect-square w-2 rounded-full bg-slate-400 cursor-pointer"
-          ></span>
-          <span
-            class="aspect-square w-2 rounded-full active-dot bg-slate-400 cursor-pointer"
-          ></span>
-          <span
-            class="aspect-square w-2 rounded-full bg-slate-400 cursor-pointer"
-          ></span>
-          <span
-            class="aspect-square w-2 rounded-full bg-slate-400 cursor-pointer"
-          ></span>
-          <span
-            class="aspect-square w-2 rounded-full bg-slate-400 cursor-pointer"
-          ></span>
+          <!--end product  -->
+          <!-- details -->
+          <div class="lg:w-[55%] flex flex-col justify-between">
+            <div class="ml-12 md:ml-16 lg:max-w-[550px] pr-2 mt-16 lg:mt-0">
+              <!-- head  -->
+              <div
+                class="flex justify-between flex-col-reverse sm:flex-row items-center"
+              >
+                <h2 class="title text-[2.5rem]">products</h2>
+                <div>
+                  <p class="item uppercase">
+                    <span>Living room</span>
+                    <img
+                      src="/assets/icons/living-room.png"
+                      alt=""
+                      class="w-8"
+                    />
+                  </p>
+                </div>
+              </div>
+              <!-- end head  -->
+              <!-- product name and description  -->
+              <div>
+                <h1 class="uppercase text-4xl font-thin mt-24 mb-4">
+                  <span class="text-main">white seat -</span> office
+                </h1>
+                <p class="text-gray-400 text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  aliquid suscipit itaque error adipisci. Vero magnam eos neque
+                  laboriosam facilis.
+                </p>
+              </div>
+              <!-- end product name and description -->
+              <!-- cost and quantity -->
+              <div class="pt-12 flex justify-between items-center mb-10">
+                <!-- cost -->
+                <div>
+                  <p class="uppercase pb-1 text-sm text-gray-400">cost</p>
+                  <span class="text-main text-xl font-semibold">$65</span>
+                  <del class="text-gray-500 text-sm font-semibold">$85</del>
+                </div>
+                <!--quantity  -->
+                <div class="flex items-end gap-1">
+                  <div>
+                    <p class="uppercase pb-1 text-sm text-gray-400">quantity</p>
+                    <input
+                      class="w-16 font-bold px-2 py-1 rounded-full focus:outline-none focus:ring-1 focus:ring-main"
+                      value="1"
+                      min="0"
+                      type="number"
+                      title="quantity"
+                      name="quantity"
+                      id="quantity"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="ml-2 bg-main text-white uppercase px-4 py-1 rounded-2xl text-sm font-semibold"
+                  >
+                    add to cart
+                  </button>
+                </div>
+              </div>
+              <!-- end cost and quantity -->
+            </div>
+            <!-- other products   -->
+            <div class="overflow-x-scroll">
+              <div class="flex gap-1 w-[1000px]">
+                <div class="secondary-card">
+                  <img
+                    loading="lazy"
+                    src="/assets/images/product-1.png"
+                    alt="Red seat"
+                  />
+                  <div>
+                    <h3>red seat</h3>
+                    <p>the best seat for your living room.</p>
+                  </div>
+                </div>
+                <div class="secondary-card">
+                  <img
+                    loading="lazy"
+                    src="/assets/images/product-1.png"
+                    alt="Red seat"
+                  />
+                  <div>
+                    <h3>red seat</h3>
+                    <p>the best seat for your living room.</p>
+                  </div>
+                </div>
+                <div class="secondary-card">
+                  <img
+                    loading="lazy"
+                    src="/assets/images/product-2.png"
+                    alt="Red seat"
+                  />
+                  <div>
+                    <h3>red seat</h3>
+                    <p>the best seat for your living room.</p>
+                  </div>
+                </div>
+                <div class="secondary-card">
+                  <img
+                    loading="lazy"
+                    src="/assets/images/product-3.png"
+                    alt="Red seat"
+                  />
+                  <div>
+                    <h3>red seat</h3>
+                    <p>the best seat for your living room.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end other products  -->
+          </div>
+          <!-- end details -->
         </div>
       </section>
-      <!-- end home section  -->
+      <!-- end single product section  -->
     </main>
 
     <script defer="true" src="js/index.js"></script>

@@ -9,356 +9,433 @@
   </head>
 
   <body>
-    <!-- side bar  -->
-    <div
-      class="side-bar fixed bg-white shadow-lg left-0 top-0 bottom-0 w-12 sm:w-16 h-screen py-5 flex flex-col justify-between z-50"
-    >
-      <div>
-        <a title="home" href="#home">
-          <img
-            src="/assets/images/logo.png"
-            class="w-[35px] mx-auto"
-            alt="Olios Logo"
-            class="w-full"
-          />
-        </a>
-      </div>
-      <ul class="flex flex-col gap-4 basis-2/3">
-        <li>
-          <a title="main page" href="#home">
-            <svg
-              class="w-[24px] mx-auto hover:-translate-y-1 hover:fill-main fill-gray-400 cursor-pointer transition-all duration-300"
-              data-section="main"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 576 512"
-            >
-              <path
-                d="M573.3 250C576.6 252.9 576.9 257.1 573.1 261.3C571.1 264.6 566 264.9 562.7 261.1L512 217.1V448C512 483.3 483.3 512 448 512H128C92.65 512 64 483.3 64 448V217.1L13.3 261.1C9.997 264.9 4.941 264.6 2.012 261.3C-.9182 257.1-.6116 252.9 2.696 250L282.7 2.011C285.7-.6704 290.3-.6704 293.3 2.011L573.3 250zM128 496H208V328C208 314.7 218.7 304 232 304H344C357.3 304 368 314.7 368 328V496H448C474.5 496 496 474.5 496 448V202.9L288 18.69L80 202.9V448C80 474.5 101.5 496 128 496V496zM224 496H352V328C352 323.6 348.4 320 344 320H232C227.6 320 224 323.6 224 328V496z"
-              />
-            </svg>
+    <main class="max-w-[1440px] mx-auto relative">
+      <!-- side bar  -->
+      <div
+        class="side-bar fixed bg-white shadow-lg left-0 top-0 bottom-0 w-12 sm:w-16 h-screen py-5 flex flex-col justify-between z-50"
+      >
+        <div>
+          <a title="home" href="#home">
+            <img
+              src="/assets/images/logo.png"
+              class="w-[35px] mx-auto"
+              alt="Olios Logo"
+              class="w-full"
+            />
           </a>
-        </li>
-        <li>
-          <a title="products page" title href="#products">
+        </div>
+        <ul class="flex flex-col gap-4 basis-2/3">
+          <li>
+            <a title="main page" href="#home">
+              <svg
+                class="w-[24px] mx-auto hover:-translate-y-1 hover:fill-main fill-gray-400 cursor-pointer transition-all duration-300"
+                data-section="main"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  d="M573.3 250C576.6 252.9 576.9 257.1 573.1 261.3C571.1 264.6 566 264.9 562.7 261.1L512 217.1V448C512 483.3 483.3 512 448 512H128C92.65 512 64 483.3 64 448V217.1L13.3 261.1C9.997 264.9 4.941 264.6 2.012 261.3C-.9182 257.1-.6116 252.9 2.696 250L282.7 2.011C285.7-.6704 290.3-.6704 293.3 2.011L573.3 250zM128 496H208V328C208 314.7 218.7 304 232 304H344C357.3 304 368 314.7 368 328V496H448C474.5 496 496 474.5 496 448V202.9L288 18.69L80 202.9V448C80 474.5 101.5 496 128 496V496zM224 496H352V328C352 323.6 348.4 320 344 320H232C227.6 320 224 323.6 224 328V496z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a title="products page" title href="#products">
+              <svg
+                class="w-[24px] mx-auto hover:-translate-y-1 hover:fill-main fill-gray-400 cursor-pointer transition-all duration-300"
+                data-section="cart"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  d="M128 287.1C128 270.3 142.3 255.1 160 255.1C177.7 255.1 192 270.3 192 287.1C192 305.7 177.7 319.1 160 319.1C142.3 319.1 128 305.7 128 287.1zM160 271.1C151.2 271.1 144 279.2 144 287.1C144 296.8 151.2 303.1 160 303.1C168.8 303.1 176 296.8 176 287.1C176 279.2 168.8 271.1 160 271.1zM448 287.1C448 305.7 433.7 319.1 416 319.1C398.3 319.1 384 305.7 384 287.1C384 270.3 398.3 255.1 416 255.1C433.7 255.1 448 270.3 448 287.1zM416 303.1C424.8 303.1 432 296.8 432 287.1C432 279.2 424.8 271.1 416 271.1C407.2 271.1 400 279.2 400 287.1C400 296.8 407.2 303.1 416 303.1zM336.1 11.81C334.9 7.929 336.3 3.074 340.2 .9692C344.1-1.135 348.9 .3084 351 4.193L452.8 192H568C572.4 192 576 195.6 576 200C576 204.4 572.4 208 568 208H540L476.1 463.5C468.1 492 443.4 512 414 512H161.1C132.6 512 107 492 99.88 463.5L36 208H8C3.582 208 0 204.4 0 200C0 195.6 3.582 192 8 192H123.2L224.1 4.193C227.1 .3081 231.9-1.135 235.8 .9692C239.7 3.074 241.1 7.929 239 11.81L141.4 192H434.6L336.1 11.81zM523.5 208H52.49L115.4 459.6C120.7 481 139.9 496 161.1 496H414C436.1 496 455.3 481 460.6 459.6L523.5 208z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a title="search" href="#search">
+              <svg
+                class="w-[24px] mx-auto hover:-translate-y-1 hover:fill-main fill-gray-400 cursor-pointer transition-all duration-300"
+                data-section="search"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M509.7 498.3l-149.2-149.2C394.8 312.1 415.1 262.6 415.1 208c0-114.9-93.13-208-208-208S-.0002 93.13-.0002 208S93.12 416 207.1 416c54.55 0 104.1-21.17 141.2-55.54l149.2 149.2C499.9 511.2 501.9 512 503.1 512s4.094-.7813 5.656-2.344C512.8 506.5 512.8 501.5 509.7 498.3zM207.1 400c-105.9 0-192-86.13-192-192s86.13-192 192-192s192 86.13 192 192S313.9 400 207.1 400z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div>
+          <a title="inbox" href="#inbox">
             <svg
               class="w-[24px] mx-auto hover:-translate-y-1 hover:fill-main fill-gray-400 cursor-pointer transition-all duration-300"
-              data-section="cart"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 576 512"
-            >
-              <path
-                d="M128 287.1C128 270.3 142.3 255.1 160 255.1C177.7 255.1 192 270.3 192 287.1C192 305.7 177.7 319.1 160 319.1C142.3 319.1 128 305.7 128 287.1zM160 271.1C151.2 271.1 144 279.2 144 287.1C144 296.8 151.2 303.1 160 303.1C168.8 303.1 176 296.8 176 287.1C176 279.2 168.8 271.1 160 271.1zM448 287.1C448 305.7 433.7 319.1 416 319.1C398.3 319.1 384 305.7 384 287.1C384 270.3 398.3 255.1 416 255.1C433.7 255.1 448 270.3 448 287.1zM416 303.1C424.8 303.1 432 296.8 432 287.1C432 279.2 424.8 271.1 416 271.1C407.2 271.1 400 279.2 400 287.1C400 296.8 407.2 303.1 416 303.1zM336.1 11.81C334.9 7.929 336.3 3.074 340.2 .9692C344.1-1.135 348.9 .3084 351 4.193L452.8 192H568C572.4 192 576 195.6 576 200C576 204.4 572.4 208 568 208H540L476.1 463.5C468.1 492 443.4 512 414 512H161.1C132.6 512 107 492 99.88 463.5L36 208H8C3.582 208 0 204.4 0 200C0 195.6 3.582 192 8 192H123.2L224.1 4.193C227.1 .3081 231.9-1.135 235.8 .9692C239.7 3.074 241.1 7.929 239 11.81L141.4 192H434.6L336.1 11.81zM523.5 208H52.49L115.4 459.6C120.7 481 139.9 496 161.1 496H414C436.1 496 455.3 481 460.6 459.6L523.5 208z"
-              />
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a title="search" href="#search">
-            <svg
-              class="w-[24px] mx-auto hover:-translate-y-1 hover:fill-main fill-gray-400 cursor-pointer transition-all duration-300"
-              data-section="search"
+              data-section="inboxed"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
               <path
-                d="M509.7 498.3l-149.2-149.2C394.8 312.1 415.1 262.6 415.1 208c0-114.9-93.13-208-208-208S-.0002 93.13-.0002 208S93.12 416 207.1 416c54.55 0 104.1-21.17 141.2-55.54l149.2 149.2C499.9 511.2 501.9 512 503.1 512s4.094-.7813 5.656-2.344C512.8 506.5 512.8 501.5 509.7 498.3zM207.1 400c-105.9 0-192-86.13-192-192s86.13-192 192-192s192 86.13 192 192S313.9 400 207.1 400z"
+                d="M440 128h-80C355.6 128 352 131.6 352 136s3.594 8 8 8h80c13.22 0 24 10.78 24 24v304c0 13.22-10.78 24-24 24H72c-13.22 0-24-10.78-24-24v-304c0-13.22 10.78-24 24-24h80C156.4 144 160 140.4 160 136S156.4 128 152 128h-80C49.94 128 32 145.9 32 168v304C32 494.1 49.94 512 72 512h368c22.06 0 40-17.94 40-40v-304C480 145.9 462.1 128 440 128zM154.3 274.3c-3.125 3.125-3.125 8.188 0 11.31l96 96C251.9 383.2 253.9 384 256 384s4.094-.7813 5.656-2.344l96-96c3.125-3.125 3.125-8.188 0-11.31s-8.188-3.125-11.31 0L264 356.7V8C264 3.594 260.4 0 256 0S248 3.594 248 8v348.7L165.7 274.3C162.5 271.2 157.5 271.2 154.3 274.3z"
               />
             </svg>
           </a>
-        </li>
-      </ul>
-      <div>
-        <a title="inbox" href="#inbox">
-          <svg
-            class="w-[24px] mx-auto hover:-translate-y-1 hover:fill-main fill-gray-400 cursor-pointer transition-all duration-300"
-            data-section="inboxed"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M440 128h-80C355.6 128 352 131.6 352 136s3.594 8 8 8h80c13.22 0 24 10.78 24 24v304c0 13.22-10.78 24-24 24H72c-13.22 0-24-10.78-24-24v-304c0-13.22 10.78-24 24-24h80C156.4 144 160 140.4 160 136S156.4 128 152 128h-80C49.94 128 32 145.9 32 168v304C32 494.1 49.94 512 72 512h368c22.06 0 40-17.94 40-40v-304C480 145.9 462.1 128 440 128zM154.3 274.3c-3.125 3.125-3.125 8.188 0 11.31l96 96C251.9 383.2 253.9 384 256 384s4.094-.7813 5.656-2.344l96-96c3.125-3.125 3.125-8.188 0-11.31s-8.188-3.125-11.31 0L264 356.7V8C264 3.594 260.4 0 256 0S248 3.594 248 8v348.7L165.7 274.3C162.5 271.2 157.5 271.2 154.3 274.3z"
-            />
-          </svg>
-        </a>
+        </div>
       </div>
-    </div>
-    <!-- side menu icon -->
+      <!-- side menu icon -->
 
-    <button
-      aria-label="open and close"
-      id="menu-btn"
-      class="rounded-full w-11 h-11 shadow-md fixed right-[40px] sm:right-7 top-4 flex items-center justify-center cursor-pointer bg-white z-50"
-      type="button"
-    >
-      <div class="block hamburger h-fit focus:outline-none">
-        <span class="hamburger-top"></span>
-        <span class="hamburger-middle"></span>
-        <span class="hamburger-bottom"></span>
-      </div>
-    </button>
-
-    <!-- side menu -->
-    <section
-      id="side-menu"
-      class="side-menu -z-10 fixed w-screen h-screen top-0 left-0"
-    >
-      <div
-        id="layout"
-        class="bg-gray-200 backdrop-blur-sm opacity-0 absolute w-screen h-screen top-0 left-0 layout transition-opacity duration-300"
-      ></div>
-      <!-- side menu items -->
-      <div
-        id="side-menu-items"
-        class="side-menu-items absolute w-[240px] pr-12 h-screen right-0 top-0 shadow-md bg-white opacity-100"
+      <button
+        aria-label="open and close"
+        id="menu-btn"
+        class="rounded-full w-11 h-11 shadow-md fixed right-[40px] sm:right-7 top-4 flex items-center justify-center cursor-pointer bg-white z-50"
+        type="button"
       >
-        <ul
-          class="h-[70vh] flex flex-col justify-center gap-7 items-start uppercase"
+        <div class="block hamburger h-fit focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </div>
+      </button>
+
+      <!-- side menu -->
+      <section
+        id="side-menu"
+        class="side-menu -z-10 fixed w-screen h-screen top-0 left-0"
+      >
+        <div
+          id="layout"
+          class="bg-gray-200 backdrop-blur-sm opacity-0 absolute w-screen h-screen top-0 left-0 layout transition-opacity duration-300"
+        ></div>
+        <!-- side menu items -->
+        <div
+          id="side-menu-items"
+          class="side-menu-items absolute w-[240px] pr-12 h-screen right-0 top-0 shadow-md bg-white opacity-100"
         >
-          <li class="item">
-            <span>Living room</span>
-            <img src="/assets/icons/living-room.png" alt="" class="w-8" />
-          </li>
-          <li class="item">
-            <span>office</span>
-            <img src="/assets/icons/office.png" alt="" class="w-8" />
-          </li>
-          <li class="item">
-            <span>for kids</span>
-            <img src="/assets/icons/for-kids.png" alt="" class="w-8" />
-          </li>
-          <li class="item">
-            <span>for kids</span>
-            <img src="/assets/icons/kitchen.png" alt="" class="w-8" />
-          </li>
-          <li class="item">
-            <span>accesories</span>
-            <img src="/assets/icons/accesories.png" alt="" class="w-8" />
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- end side menu  -->
+          <ul
+            class="h-[70vh] flex flex-col justify-center gap-7 items-start uppercase"
+          >
+            <li class="item">
+              <span>Living room</span>
+              <img src="/assets/icons/living-room.png" alt="" class="w-8" />
+            </li>
+            <li class="item">
+              <span>office</span>
+              <img src="/assets/icons/office.png" alt="" class="w-8" />
+            </li>
+            <li class="item">
+              <span>for kids</span>
+              <img src="/assets/icons/for-kids.png" alt="" class="w-8" />
+            </li>
+            <li class="item">
+              <span>for kids</span>
+              <img src="/assets/icons/kitchen.png" alt="" class="w-8" />
+            </li>
+            <li class="item">
+              <span>accesories</span>
+              <img src="/assets/icons/accesories.png" alt="" class="w-8" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- end side menu  -->
 
-    <!-- home section section  -->
-    <section id="home" class="home h-screen relative">
-      <h1
-        class="home-text uppercase text-[9rem] md:text-[11.5rem] lg:text-[15rem] text-center text-gray-200 font-bold absolute w-full"
-      >
-        newest
-      </h1>
-      <div class="relative uppercase text-center pt-24 md:pt-8 ml-11">
+      <!-- home section section  -->
+      <section id="home" class="home h-screen relative">
         <h1
-          class="text-[4rem] sm:text-[7rem] md:text-[10rem] text-gray-900 font-thin text-center leading-none"
+          class="home-text uppercase text-[9rem] md:text-[11.5rem] lg:text-[15rem] text-center text-gray-200 font-bold absolute w-full"
         >
-          Olios
+          newest
         </h1>
-        <div>
-          <h3
-            class="text-[1.2rem] sm:text-[1.6rem] md:text-[2rem] text-gray-500"
+        <div class="relative uppercase text-center pt-24 md:pt-8 ml-11">
+          <h1
+            class="text-[4rem] sm:text-[7rem] md:text-[10rem] text-gray-900 font-thin text-center leading-none"
           >
-            newest furniture shop template
-          </h3>
-          <button
-            type="button"
-            class="mt-10 bg-main text-white uppercase px-4 py-1 rounded-2xl text-sm font-bold"
-          >
-            view more
-          </button>
-        </div>
-      </div>
-      <div class="flex gap-2 absolute bottom-8 right-7">
-        <span
-          class="aspect-square w-2 rounded-full bg-slate-400 cursor-pointer"
-        ></span>
-        <span
-          class="aspect-square w-2 rounded-full active-dot bg-slate-400 cursor-pointer"
-        ></span>
-        <span
-          class="aspect-square w-2 rounded-full bg-slate-400 cursor-pointer"
-        ></span>
-        <span
-          class="aspect-square w-2 rounded-full bg-slate-400 cursor-pointer"
-        ></span>
-        <span
-          class="aspect-square w-2 rounded-full bg-slate-400 cursor-pointer"
-        ></span>
-      </div>
-    </section>
-    <!-- end home section  -->
-
-    <!-- products section  -->
-    <section
-      id="products"
-      class="section py-10 pl-14 sm:pr-10 md:px-24 lg:px-32 xl:px-50 bg-section min-h-screen"
-    >
-      <!-- section head  -->
-      <div
-        class="flex justify-between flex-col-reverse sm:flex-row items-center"
-      >
-        <h2 class="title text-[2.5rem]">products</h2>
-        <div>
-          <p class="item uppercase">
-            <span>Living room</span>
-            <img src="/assets/icons/living-room.png" alt="" class="w-8" />
-          </p>
-        </div>
-      </div>
-
-      <!-- section body  -->
-      <div class="colection flex flex-col gap-6 py-10">
-        <!--  -->
-        <div
-          class="flex flex-col justify-center sm:flex-row gap-6 items-center sm:items-stretch"
-        >
-          <div class="card small">
-            <img
-              loading="lazy"
-              src="/assets/images/product-1.png"
-              alt="Red seat"
-            />
-            <div>
-              <h3>red seat</h3>
-              <p>the best seat for your living room.</p>
-              <span>$45</span>
-            </div>
-          </div>
-
-          <div class="card wide">
-            <img
-              loading="lazy"
-              src="/assets/images/product-3.png"
-              alt="white table"
-            />
-            <div>
-              <h3>white table</h3>
-              <p>the best table for your living room.</p>
-              <span>$320</span>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-        <div
-          class="flex flex-col justify-center sm:flex-row gap-6 items-center sm:items-stretch flex-wrap"
-        >
-          <div class="card small">
-            <img
-              loading="lazy"
-              src="/assets/images/product-2.png"
-              alt="blue seat"
-            />
-            <div>
-              <h3>blue seat</h3>
-              <p>the best seat for your living room.</p>
-              <span>$35</span>
-            </div>
-          </div>
-          <!--  -->
-
-          <div class="card">
-            <img
-              loading="lazy"
-              src="/assets/images/product-5.png"
-              alt="dark seat"
-            />
-            <div>
-              <h3>dark seat</h3>
-              <p>the best seat for your living room.</p>
-              <span>$90</span>
-            </div>
-          </div>
-          <!--  -->
-
-          <div class="card medium">
-            <img
-              src="/assets/images/product-4.png"
-              alt="modern bed "
-              loading="lazy"
-            />
-            <div>
-              <h3>Modern bed</h3>
-              <p>the best bed for your living room.</p>
-              <span>$520</span>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-      </div>
-
-      <h4 class="view-more">view more products</h4>
-    </section>
-    <!-- end porducts section -->
-
-    <!-- single product section  -->
-    <section id="product" class="section pl-14 sm:pl-16 bg-section">
-      <div class="min-h-screen flex flex-col sm:flex-row items-center gap-4">
-        <div class="bg-white w-[45vw] pt-10 pb-20 px-6 shadow-md">
-          <div class="mb-6">
-            <div class="flex items-center justify-end gap-1">
-              <span>435</span
-              ><img src="/assets/icons/heart.svg" class="w-4" alt="heat" />
-            </div>
-          </div>
-          <img
-            src="/assets/images/product-6.png"
-            class="w-[80%] mx-auto"
-            alt="white seat"
-          />
-        </div>
-        <!--  -->
-        <div class="grow">
-          <div class="ml-12 md:ml-16 max-w-[400px] pr-2">
-            <div
-              class="flex justify-between flex-col-reverse sm:flex-row items-center"
+            Olios
+          </h1>
+          <div>
+            <h3
+              class="text-[1.2rem] sm:text-[1.6rem] md:text-[2rem] text-gray-500"
             >
-              <h2 class="title text-[2.5rem]">products</h2>
+              newest furniture shop template
+            </h3>
+            <button
+              type="button"
+              class="mt-10 bg-main text-white uppercase px-4 py-1 rounded-2xl text-sm font-bold"
+            >
+              view more
+            </button>
+          </div>
+        </div>
+        <div class="flex gap-2 absolute bottom-8 right-7">
+          <span
+            class="aspect-square w-2 rounded-full bg-slate-400 cursor-pointer"
+          ></span>
+          <span
+            class="aspect-square w-2 rounded-full active-dot bg-slate-400 cursor-pointer"
+          ></span>
+          <span
+            class="aspect-square w-2 rounded-full bg-slate-400 cursor-pointer"
+          ></span>
+          <span
+            class="aspect-square w-2 rounded-full bg-slate-400 cursor-pointer"
+          ></span>
+          <span
+            class="aspect-square w-2 rounded-full bg-slate-400 cursor-pointer"
+          ></span>
+        </div>
+      </section>
+      <!-- end home section  -->
+
+      <!-- products section  -->
+      <section
+        id="products"
+        class="section py-10 pl-14 sm:pr-10 md:px-24 lg:px-32 xl:px-50 bg-section min-h-screen"
+      >
+        <!-- section head  -->
+        <div
+          class="flex justify-between flex-col-reverse sm:flex-row items-center"
+        >
+          <h2 class="title text-[2.5rem]">products</h2>
+          <div>
+            <p class="item uppercase">
+              <span>Living room</span>
+              <img src="/assets/icons/living-room.png" alt="" class="w-8" />
+            </p>
+          </div>
+        </div>
+
+        <!-- section body  -->
+        <div class="colection flex flex-col gap-6 py-10">
+          <!--  -->
+          <div
+            class="flex flex-col justify-center sm:flex-row gap-6 items-center sm:items-stretch"
+          >
+            <div class="card small">
+              <img
+                loading="lazy"
+                src="/assets/images/product-1.png"
+                alt="Red seat"
+              />
               <div>
-                <p class="item uppercase">
-                  <span>Living room</span>
-                  <img src="/assets/icons/living-room.png" alt="" class="w-8" />
+                <h3>red seat</h3>
+                <p>the best seat for your living room.</p>
+                <span>$45</span>
+              </div>
+            </div>
+
+            <div class="card wide">
+              <img
+                loading="lazy"
+                src="/assets/images/product-3.png"
+                alt="white table"
+              />
+              <div>
+                <h3>white table</h3>
+                <p>the best table for your living room.</p>
+                <span>$320</span>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div
+            class="flex flex-col justify-center sm:flex-row gap-6 items-center sm:items-stretch flex-wrap"
+          >
+            <div class="card small">
+              <img
+                loading="lazy"
+                src="/assets/images/product-2.png"
+                alt="blue seat"
+              />
+              <div>
+                <h3>blue seat</h3>
+                <p>the best seat for your living room.</p>
+                <span>$35</span>
+              </div>
+            </div>
+            <!--  -->
+
+            <div class="card">
+              <img
+                loading="lazy"
+                src="/assets/images/product-5.png"
+                alt="dark seat"
+              />
+              <div>
+                <h3>dark seat</h3>
+                <p>the best seat for your living room.</p>
+                <span>$90</span>
+              </div>
+            </div>
+            <!--  -->
+
+            <div class="card medium">
+              <img
+                src="/assets/images/product-4.png"
+                alt="modern bed "
+                loading="lazy"
+              />
+              <div>
+                <h3>Modern bed</h3>
+                <p>the best bed for your living room.</p>
+                <span>$520</span>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+
+        <h4 class="view-more">view more products</h4>
+      </section>
+      <!-- end porducts section -->
+
+      <!-- single product section  -->
+      <section id="product" class="section pl-14 sm:pl-16 bg-section">
+        <div class="min-h-screen flex flex-col lg:flex-row">
+          <!-- product  -->
+          <div class="bg-white lg:w-[45%] pt-10 pb-20 px-6 shadow-md">
+            <div class="mb-6">
+              <div class="flex items-center justify-end gap-1">
+                <span class="likes-number">435</span
+                ><img
+                  src="/assets/icons/heart.svg"
+                  class="w-4 like cursor-pointer hover:scale-110 active:scale-100"
+                  alt="heat"
+                />
+                <img
+                  src="/assets/icons/heart-filled.svg"
+                  class="w-4 like hidden cursor-pointer hover:scale-110 active:scale-100"
+                  alt="heart-filled"
+                />
+              </div>
+            </div>
+            <img
+              src="/assets/images/product-6.png"
+              class="w-[80%] mx-auto"
+              alt="white seat"
+            />
+          </div>
+          <!--end product  -->
+          <!-- details -->
+          <div class="lg:w-[55%] flex flex-col justify-between">
+            <div class="ml-12 md:ml-16 lg:max-w-[550px] pr-2 mt-16 lg:mt-0">
+              <!-- head  -->
+              <div
+                class="flex justify-between flex-col-reverse sm:flex-row items-center"
+              >
+                <h2 class="title text-[2.5rem]">products</h2>
+                <div>
+                  <p class="item uppercase">
+                    <span>Living room</span>
+                    <img
+                      src="/assets/icons/living-room.png"
+                      alt=""
+                      class="w-8"
+                    />
+                  </p>
+                </div>
+              </div>
+              <!-- end head  -->
+              <!-- product name and description  -->
+              <div>
+                <h1 class="uppercase text-4xl font-thin mt-24 mb-4">
+                  <span class="text-main">white seat -</span> office
+                </h1>
+                <p class="text-gray-400 text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  aliquid suscipit itaque error adipisci. Vero magnam eos neque
+                  laboriosam facilis.
                 </p>
               </div>
-            </div>
-            <div>
-              <h1 class="uppercase text-4xl font-thin mt-32 mb-4">
-                <span class="text-main">white seat -</span> office
-              </h1>
-              <p class="text-gray-400 text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                aliquid suscipit itaque error adipisci. Vero magnam eos neque
-                laboriosam facilis.
-              </p>
-            </div>
-            <div class="pt-12 flex justify-between items-center">
-              <div>
-                <p class="uppercase pb-1 text-sm text-gray-400">cost</p>
-                <span class="text-main text-xl font-semibold">$65</span>
-              </div>
-              <!--  -->
-              <div class="flex items-end gap-1">
+              <!-- end product name and description -->
+              <!-- cost and quantity -->
+              <div class="pt-12 flex justify-between items-center mb-10">
+                <!-- cost -->
                 <div>
-                  <p class="uppercase pb-1 text-sm text-gray-400">quantity</p>
-                  <input
-                    class="w-16 font-bold px-2 py-1 rounded-full focus:outline-none focus:ring-1 focus:ring-main"
-                    value="1"
-                    type="number"
-                    title="quantity"
-                    name="quantity"
-                    id="quantity"
-                  />
+                  <p class="uppercase pb-1 text-sm text-gray-400">cost</p>
+                  <span class="text-main text-xl font-semibold">$65</span>
+                  <del class="text-gray-500 text-sm font-semibold">$85</del>
                 </div>
-                <button
-                  type="button"
-                  class="ml-2 bg-main text-white uppercase px-4 py-1 rounded-2xl text-sm font-semibold"
-                >
-                  add to cart
-                </button>
+                <!--quantity  -->
+                <div class="flex items-end gap-1">
+                  <div>
+                    <p class="uppercase pb-1 text-sm text-gray-400">quantity</p>
+                    <input
+                      class="w-16 font-bold px-2 py-1 rounded-full focus:outline-none focus:ring-1 focus:ring-main"
+                      value="1"
+                      min="0"
+                      type="number"
+                      title="quantity"
+                      name="quantity"
+                      id="quantity"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="ml-2 bg-main text-white uppercase px-4 py-1 rounded-2xl text-sm font-semibold"
+                  >
+                    add to cart
+                  </button>
+                </div>
+              </div>
+              <!-- end cost and quantity -->
+            </div>
+            <!-- other products   -->
+            <div class="overflow-x-scroll">
+              <div class="flex gap-1 w-[1000px]">
+                <div class="secondary-card">
+                  <img
+                    loading="lazy"
+                    src="/assets/images/product-1.png"
+                    alt="Red seat"
+                  />
+                  <div>
+                    <h3>red seat</h3>
+                    <p>the best seat for your living room.</p>
+                  </div>
+                </div>
+                <div class="secondary-card">
+                  <img
+                    loading="lazy"
+                    src="/assets/images/product-1.png"
+                    alt="Red seat"
+                  />
+                  <div>
+                    <h3>red seat</h3>
+                    <p>the best seat for your living room.</p>
+                  </div>
+                </div>
+                <div class="secondary-card">
+                  <img
+                    loading="lazy"
+                    src="/assets/images/product-2.png"
+                    alt="Red seat"
+                  />
+                  <div>
+                    <h3>red seat</h3>
+                    <p>the best seat for your living room.</p>
+                  </div>
+                </div>
+                <div class="secondary-card">
+                  <img
+                    loading="lazy"
+                    src="/assets/images/product-3.png"
+                    alt="Red seat"
+                  />
+                  <div>
+                    <h3>red seat</h3>
+                    <p>the best seat for your living room.</p>
+                  </div>
+                </div>
               </div>
             </div>
+            <!-- end other products  -->
           </div>
+          <!-- end details -->
         </div>
-        <!--  -->
-      </div>
-    </section>
+      </section>
+      <!-- end single product section  -->
+    </main>
 
     <script defer="true" src="js/index.js"></script>
   </body>

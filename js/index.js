@@ -43,14 +43,29 @@ function handleIntersection(entries) {
   });
 }
 
-let j = 0;
-const cards = document.querySelectorAll(".card");
-cards.forEach((ele, ind) => {
-  j++;
-  if (j === 3) j = 0;
-  ele.style.cssText = `opacity:0; transform:translateY(70px); transition-delay:${
-    j / 10
-  }s;`;
+// hideing elements and setting delay
+{
+  let j = 0;
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((ele, ind) => {
+    j++;
+    if (j === 3) j = 0;
+    ele.style.cssText = `opacity:0; transform:translateY(70px); transition-delay:${
+      j / 10
+    }s;`;
 
-  observer.observe(ele);
-});
+    observer.observe(ele);
+  });
+}
+
+// like
+const like = document.querySelectorAll(".like");
+const likesNumber = document.querySelector(".likes-number");
+like.forEach((ele) =>
+  ele.addEventListener("click", (e) => {
+    like.forEach((ele) => ele.classList.toggle("hidden")),
+      (likesNumber.textContent = like[0].classList.contains("hidden")
+        ? ++likesNumber.textContent
+        : --likesNumber.textContent);
+  })
+);

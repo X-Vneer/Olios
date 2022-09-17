@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 /* global  */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  height: 5px;
+  @apply bg-main;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -144,4 +156,15 @@ html {
 
 .view-more {
   @apply text-lg text-main text-center uppercase cursor-pointer hover:text-gray-400 transition-colors duration-300 w-fit mx-auto;
+}
+
+/* product section */
+.secondary-card {
+  @apply bg-white p-4 w-[250px] flex flex-col justify-between;
+}
+.secondary-card h3 {
+  @apply mb-2 text-lg font-normal uppercase;
+}
+.secondary-card p {
+  @apply text-gray-400 uppercase text-sm;
 }

@@ -153,7 +153,10 @@
       <!-- end side menu  -->
 
       <!-- single product section  -->
-      <section id="product" class="section pl-14 sm:pl-16 bg-section hidden">
+      <section
+        id="product"
+        class="section pl-12 sm:px-12 md:px-20 bg-section pt-20 pb-6"
+      >
         <div class="min-h-screen flex flex-col lg:flex-row">
           <!-- product  -->
           <div class="bg-white lg:w-[45%] pt-10 pb-20 px-6 shadow-md">
@@ -180,7 +183,7 @@
           </div>
           <!--end product  -->
           <!-- details -->
-          <div class="lg:w-[55%] flex flex-col justify-between">
+          <div class="lg:w-[55%] flex flex-col justify-between ml-2">
             <div class="ml-12 md:ml-16 lg:max-w-[550px] pr-2 mt-16 lg:mt-0">
               <!-- head  -->
               <div
@@ -212,7 +215,9 @@
               </div>
               <!-- end product name and description -->
               <!-- cost and quantity -->
-              <div class="pt-12 flex justify-between items-center mb-10">
+              <div
+                class="pt-12 flex flex-wrap gap-8 justify-center sm:justify-between items-center mb-10"
+              >
                 <!-- cost -->
                 <div>
                   <p class="uppercase pb-1 text-sm text-gray-400">cost</p>
@@ -220,26 +225,25 @@
                   <del class="text-gray-500 text-sm font-semibold">$85</del>
                 </div>
                 <!--quantity  -->
-                <div class="flex items-end gap-1">
-                  <div>
-                    <p class="uppercase pb-1 text-sm text-gray-400">quantity</p>
-                    <input
-                      class="w-16 font-bold px-2 py-1 rounded-full focus:outline-none focus:ring-1 focus:ring-main"
-                      value="1"
-                      min="0"
-                      type="number"
-                      title="quantity"
-                      name="quantity"
-                      id="quantity"
-                    />
-                  </div>
-                  <button
-                    type="button"
-                    class="ml-2 bg-main text-white uppercase px-4 py-1 rounded-2xl text-sm font-semibold"
-                  >
-                    add to cart
-                  </button>
+
+                <div>
+                  <p class="uppercase pb-1 text-sm text-gray-400">quantity</p>
+                  <input
+                    class="w-16 font-bold px-2 py-1 rounded-full focus:outline-none focus:ring-1 focus:ring-main"
+                    value="1"
+                    min="0"
+                    type="number"
+                    title="quantity"
+                    name="quantity"
+                    id="quantity"
+                  />
                 </div>
+                <button
+                  type="button"
+                  class="ml-2 bg-main text-white uppercase px-4 py-1 rounded-2xl text-sm font-semibold"
+                >
+                  add to cart
+                </button>
               </div>
               <!-- end cost and quantity -->
             </div>

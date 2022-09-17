@@ -818,6 +818,14 @@ video {
   gap: 0.25rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
 .overflow-x-scroll {
   overflow-x: scroll;
 }
@@ -912,6 +920,31 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .pr-12 {
   padding-right: 3rem;
 }
@@ -942,6 +975,22 @@ video {
 
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pl-16 {
+  padding-left: 4rem;
+}
+
+.pl-12 {
+  padding-left: 3rem;
 }
 
 .text-center {
@@ -1470,9 +1519,18 @@ html {
     align-items: stretch;
   }
 
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
   .sm\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .sm\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .sm\:pr-10 {
@@ -1500,6 +1558,11 @@ html {
   .md\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .md\:pt-8 {
